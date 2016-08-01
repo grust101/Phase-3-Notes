@@ -1,0 +1,18 @@
+Rails Intro:
+
+advice: 
+- don't fight convention
+
+
+Always use postgres over mysql 
+
+Rails New: app_name -d -T -skip-turbolinks
+
+
+
+Rails 
+
+Controller 
+      application controller methods
+      
+Helper methods are only available in views
