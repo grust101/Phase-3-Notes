@@ -16,3 +16,5 @@ Controller
       application controller methods
       
 Helper methods are only available in views
+
+
