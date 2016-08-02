@@ -1,0 +1,34 @@
+Difference between sessions/flash/cookies = what they are used for and how long, they all persist different types of data
+
+sessions are the user state persisting through the application
+
+cookies: how the server recognizes you, most often used for bookmarking you location on a page
+  - has an expiration that is defined as an absolute date or can exprire when a session end
+
+
+Sessions: 
+
+
+
+current user def goes in application controller
+
+login logout defs go in sessions controller
+sessions persist data between requests
+ - places where you store canonical data
+ 
+ 
+
+Flash: 
+- a flash is a hash that is immediately cleared after it is used
+- flash will show when you move to a new page - warning, message, etc.. 
+- dont need to require anywhere
+- built in expiration method: you can set it to last for however long you want
+   - you can specify that time 
+useful for error messages
+- in your sessions controller you can user flash to say "Logged out" etc.. 
+- flash can be in controllers, erb pages, 
+flash.keep - will carry ober 
+flash.now - wont switch the page with the flash 
+
+When you go to another page is when the flash message will show up
+
