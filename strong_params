@@ -1,0 +1,13 @@
+Strong Parameters:
+
+- instead of writing params[:user] in the create def you can pass strong params 
+- strong_params will have a def 
+  def strong_params
+    params.require(:user).permit(:first_name, :email, :password)
+  end
+  
+  params looks like a hash but it's an "action controller parameter object" and behaves differently because of that
+    - built in methods
+    
+
+  
