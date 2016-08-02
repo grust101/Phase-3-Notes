@@ -1,1 +1,78 @@
+Questions to Ask: 
+
+
+Notes: 
+
+
+make new app
+git init
+ga
+gc --allow empty commit - look this up
+gc "intial rails commit"
+
+
+Authentication: 
+
+Manual - 
+1. write session controller
+ - inherit from app controller
+ - config routes resourses :sessions [:new, :create]
+  collection do 
+    add destroy in a collection... <lu>
+ - include those methods in the controller
+ 
+ collection : when a route deals with a collection of objects, if there is no id in the route it is a collection
+ member: when a route deals with one object, ALWAYS has an "id" in the route
+
+
+
+- set current user in sessions create def
+
+form_for session do |f|
+  f.text_field :username
+  f.text_field :password
+  f.submit "Log in"
+
+create User table with 
+- username, email, etc
+- you can use password_digest
+
+include has_secure_password in User class
+
+
+dont need strong params when you are recognizing specific params 
+ex: [:user][:password] is safe
+
+current user method goes in application controler
+
+Automated: 
+DIVISE GEM
+ - 
+ - letter opener 
+  - gem that will open mailers in a web browser
+
+
+sessions_path - I want to base the form on the user object, but send the form to the sessions path
+
+
+Models - Post, Comments, Users
+
+Always validate the association not the database field 
+- validating the concept, not in individual field
+
+Partials: 
+
+really nice to have things appear on every page as partials
+
+simple form - 
+
+
+TDD Flash: 
+
+1. add a group test to your gem file and include rspec-rails
+2. create rails rspeccontroller Posts
+3. run rspec to make sure something works
+4. go into conroller and write rspec tests
+
+
 
