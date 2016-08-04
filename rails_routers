@@ -1,0 +1,17 @@
+Routers: 
+
+:resources covers all the standard restful routes 
+ex resources: :users
+
+URL helpers: 
+URL ex: whenever you need to redirect between 2 different domains.
+
+Nested Resources: 
+
+paths may look complex ex: 
+
+ex path:                            ex: controller action
+
+/posts/:post_id/comments              comments#index
+
+don't get confused by the route. for this route you want to see all the comments for a post so you would go to the comments index page to all comments
