@@ -1,0 +1,23 @@
+Serialize: 
+
+YAML is an insecure method to keep info saved, therefore we want to SERIALIZE. 
+
+Serialize: 
+
+the serialize method takes a secod parameter which isn a class that define the coder to use to serialize the data. 
+
+Then we can create an object that is going to be saved using JSON. 
+
+Pros: 
+ - normally you have to create a database table that represents your data correctly
+ - with serialze you can store these regular pieces of data but without createing special fields for it
+ 
+ Example: 
+ 
+ User has an adress, email, birthday
+  def a user table with name user password, and then details
+  IN details you can store what ever you want (address, email, bday) as a JSON object
+  Then later when you call user.details it will send back a hash of the objects
+  Then you can grab specific keys out of that details hash by user.details["birthday"]
+  
+  
