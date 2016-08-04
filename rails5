@@ -1,0 +1,23 @@
+Is it time for a Rails upgrade?
+
+Need ruby 2.2.2 for Rails
+
+
+New methods in activerecord:
+
+OR 
+ - allows oyu to query for 2 things at the same time
+ - if something is 1 OR 2 return 
+ 
+BELONGS_TO 
+
+attribute api - allows you to incorporate any api into rails upon rails new
+
+has_secure_token : give the user a secure token (great for reset passwords, etc). 
+
+Websockets: come inbuilt into rails, action cable 
+
+- a way to set up a pipe between your clients ans server. Sets up an unlimited pipe between the client and server
+- server pushed data to the client side automatically (w/o refreshing the page)
+
+
