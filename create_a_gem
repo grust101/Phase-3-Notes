@@ -1,0 +1,10 @@
+Create your own gem
+
+1. instal bundler
+2. gem update bundler 1.9.0
+3. create foodie gem
+4. bundle gem foodie
+- create a scaffold directory for the new gem 
+- makes a Gemfile, Rakefile, .gitignore, spec files and Code of Conduct md
+
+5. Testing: TDD while you develop the gem, make a folder called spec and add the GEM::Specification block so that it knows to use rspec for tests
